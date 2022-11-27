@@ -56,8 +56,8 @@ include_once __DIR__. "/layouts/header.php";
             <div class="col-md-12 grid-margin"> 
               <div class="row"> 
                 <div class="col-12 col-xl-8 mb-4 mb-xl-0"> 
-                  <h3 class="font-weight-bold">Welcome Aamir</h3> 
-                  <h6 class="font-weight-normal mb-0">All systems are running smoothly!</h6> 
+                  <h3 class="font-weight-bold">အောင်မြန်မာ အိမ်ဆောက်ပစည်း ငှားရမ်းခြင်း စနစ်</h3> 
+                  
                 </div> 
               </div> 
             </div> 
@@ -67,7 +67,7 @@ include_once __DIR__. "/layouts/header.php";
               <div class="row"> 
                 <div class="col-md-4 stretch-card"> 
                 <form method="POST"> 
-                  <label class="form-label">Enter Year</label> 
+                  <label class="form-label">ရှာမည့် နှစ်</label> 
                   <div class="row"> 
                   <div class="col-md-10"> 
                   <input type="text" class="form-control" name="year"> 
@@ -81,7 +81,7 @@ include_once __DIR__. "/layouts/header.php";
                 <div class="col-md-4  stretch-card transparent"> 
                   <div class="card card-dark-blue"> 
                     <div class="card-body"> 
-                      <p class="mb-4">Total Deposit</p> 
+                      <p class="mb-4">စုစုပေါင်း စပေါ်ငွေ</p> 
                       <p class="fs-30 mb-2" id="number"> 
                         <?php 
                           if(isset($_POST['year'])){ 
@@ -96,7 +96,7 @@ include_once __DIR__. "/layouts/header.php";
                 <div class="col-md-4 stretch-card transparent"> 
                   <div class="card card-light-danger"> 
                     <div class="card-body"> 
-                      <p class="mb-4">Total Qty of item(lented)</p> 
+                      <p class="mb-4">စုစုပေါင်းငှားထားသည့် အရေအတွက်</p> 
                       <p class="fs-30 mb-2" id="number1"> 
                         <?php 
                         if(isset($_POST['year'])){ 
@@ -105,7 +105,7 @@ include_once __DIR__. "/layouts/header.php";
                         } 
                         ?> 
                       </p> 
-                        <p>Yearly</p> 
+                        <p>နှစ်စဥ◌်</p> 
                     </div> 
                   </div> 
                 </div> 
@@ -115,7 +115,7 @@ include_once __DIR__. "/layouts/header.php";
             <div class="col-md-6 grid-margin stretch-card"> 
               <div class="card"> 
                 <div class="card-body"> 
-                  <p class="card-title">Total Deposit(Monthly)</p> 
+                  <p class="card-title">စုစုပေါင်းစပေါ်ငွေ(လစဥ◌်)</p> 
                   <p class="font-weight-500"></p> 
                   
                   <canvas id="monthly-deposit"></canvas> 
@@ -126,7 +126,7 @@ include_once __DIR__. "/layouts/header.php";
               <div class="card"> 
                 <div class="card-body"> 
                  <div class="d-flex justify-content-between"> 
-                  <p class="card-title">Lent Qty(Month)</p>                   
+                  <p class="card-title">ငှားထားသည့်အရေအတွက်(လစဥ◌်)</p>                   
                  </div> 
                   <p class="font-weight-500"></p> 
                   <div id="sales-legend" class="chartjs-legend mt-4 mb-2"></div> 

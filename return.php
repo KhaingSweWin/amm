@@ -59,6 +59,9 @@ if(isset($_POST['submit'])){
     if(!empty($_POST['deposit'])){
         $deposit = $_POST['deposit'];
     }
+    else{
+        $deposit=0;
+    }
     if(empty($error_invoice) && empty($error_date) && empty($error_item) && empty($error_qty) && empty($error_emp)){
 
         $checker_query="Select * from lent where lent.id=".$lent_id;
@@ -335,7 +338,7 @@ include_once "layouts/header.php";
                                                         $depo_execute=mysqli_query($con,$deposit_query);
                                                         while($depo_result=mysqli_fetch_array($depo_execute)){
                                                             $r_deposit=intval($depo_result['r_deposit']);
-                                                            $cost-=$r_deposit;
+                                                          //  $cost-=$r_deposit;
                                                         }
                                                         echo "<td>".$id_count." မျိုး</td>";
                                                         echo "<td>".$r_deposit."</td>";

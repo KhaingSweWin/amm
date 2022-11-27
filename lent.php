@@ -157,7 +157,7 @@ include_once 'layouts/header.php';
 
                                 <div class="col-md-4 mt-3">
                                 <label for="">တစ်ရက်ငှါးရမ်းနှုန်း</label>
-                                <input type="number" class="form-control" max="1000" name="unit_price[]" id="" placeholder="တစ်ရက်ငှါးရမ်းနှုန်း" required>
+                                <input type="number" class="form-control"  name="unit_price[]" id="" placeholder="တစ်ရက်ငှါးရမ်းနှုန်း" required>
                                 </div>
                                 <div class="col-md-1 mt-3">
                                 <button  class="btn btn-outline-primary add mt-4" name="more">+</button>
@@ -203,7 +203,7 @@ include_once 'layouts/header.php';
                           <tbody id="lent_table">
                           <?php 
                           //asdasd
-                          $query = "select customer.cus_name, lent.* from customer join lent on customer.id = lent.customer_id";
+                          $query = "select customer.cus_name, lent.* from customer join lent on customer.id = lent.customer_id where lent.checker<2";
                           $result = mysqli_query($con,$query);
                           $count = 1;
                           if(!empty($result)){
@@ -371,12 +371,13 @@ $('.item1').change(first)
 function first(){
 console.log('chggg')
 var item_id=$('.item1').val();
-console.log(item_id)
+//console.log(item_id)
 $.ajax({
   url: 'check_stock.php',
   type: 'post',
   data: {item_name:item_id},
   success:function(response){
+   // alert(response)
     $('.qty1').attr('value',response)
     // $('.qty1').attr('max',response)
     maximum = response;
@@ -390,9 +391,9 @@ function fout(event){
   var item_val=$(this).val();
   var message = $(this).next();
   console.log(message)
-  console.log(maximum)
-  console.log(item_val)
-  if(item_val>maximum){
+  console.log(typeof(maximum))
+  console.log(typeof(item_val))
+  if(parseInt(item_val)>parseInt(maximum)){
     // var message = document.getElementById('error_message');
     // message.innerHTML="";
     message.html("Out of maximum")

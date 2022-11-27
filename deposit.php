@@ -57,7 +57,12 @@ include_once "layouts/header.php";
                                                           print_r($output['dept']);
                                                         }else{echo 0;
                                                         } ?></div></td>
-                                                        <td><div><?php echo $last_dep ?></div></td>
+                                                        <td><div><?php
+                                                         if(isset($last_dep)) 
+                                                         echo $last_dep; 
+                                                         else
+                                                         echo "0";
+                                                         ?></div></td>
                                                       </tr>
                                                       <?php
                                                       $count++;
