@@ -3,7 +3,7 @@ session_start();
  $qty_yearly=$_SESSION['year'];
 header('Content-Type: application/json');
 
-$con = mysqli_connect("localhost","root","","aung myanmar");
+$con = mysqli_connect("localhost","root","","aungmyanmar");
 
 $query="
 SELECT

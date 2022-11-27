@@ -4,7 +4,7 @@ session_start();
   // echo $price_yearly;
 header('Content-Type: application/json');
 
-$con = mysqli_connect("localhost","root","","aung myanmar");
+$con = mysqli_connect("localhost","root","","aungmyanmar");
 
 $query="
 SELECT

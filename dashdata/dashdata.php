@@ -5,7 +5,7 @@ header('Content-Type: application/json');
    
    // echo $year;
 
-$conn = mysqli_connect("localhost","root","","aung myanmar");
+$conn = mysqli_connect("localhost","root","","aungmyanmar");
 $sqlQuery = "SELECT
 COUNT(id),
 DATE_FORMAT(lent_date, '%Y-%m-%d') AS DAY,
