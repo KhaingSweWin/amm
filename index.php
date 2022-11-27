@@ -56,7 +56,7 @@ include_once __DIR__. "/layouts/header.php";
             <div class="col-md-12 grid-margin"> 
               <div class="row"> 
                 <div class="col-12 col-xl-8 mb-4 mb-xl-0"> 
-                  <h3 class="font-weight-bold">အောင်မြန်မာ အိမ်ဆောက်ပစည်း ငှားရမ်းခြင်း စနစ်</h3> 
+                  <h3 class="font-weight-bold">အောင်မြန်မာ အိမ်ဆောက်ပစ္စည်း ငှားရမ်းခြင်း စနစ်</h3> 
                   
                 </div> 
               </div> 
@@ -89,7 +89,7 @@ include_once __DIR__. "/layouts/header.php";
                           }                        
                         ?> 
                       </p> 
-                      <p>Yearly</p> 
+                      <p>နှစ်စဉ်</p> 
                     </div> 
                   </div> 
                 </div> 
@@ -105,7 +105,7 @@ include_once __DIR__. "/layouts/header.php";
                         } 
                         ?> 
                       </p> 
-                        <p>နှစ်စဥ◌်</p> 
+                        <p>နှစ်စဥ်</p> 
                     </div> 
                   </div> 
                 </div> 
@@ -115,7 +115,7 @@ include_once __DIR__. "/layouts/header.php";
             <div class="col-md-6 grid-margin stretch-card"> 
               <div class="card"> 
                 <div class="card-body"> 
-                  <p class="card-title">စုစုပေါင်းစပေါ်ငွေ(လစဥ◌်)</p> 
+                  <p class="card-title">စုစုပေါင်းစပေါ်ငွေ(လစဥ်)</p> 
                   <p class="font-weight-500"></p> 
                   
                   <canvas id="monthly-deposit"></canvas> 
@@ -126,7 +126,7 @@ include_once __DIR__. "/layouts/header.php";
               <div class="card"> 
                 <div class="card-body"> 
                  <div class="d-flex justify-content-between"> 
-                  <p class="card-title">ငှားထားသည့်အရေအတွက်(လစဥ◌်)</p>                   
+                  <p class="card-title">ငှားထားသည့်အရေအတွက်(လစဥ်)</p>                   
                  </div> 
                   <p class="font-weight-500"></p> 
                   <div id="sales-legend" class="chartjs-legend mt-4 mb-2"></div> 
