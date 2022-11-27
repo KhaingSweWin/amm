@@ -110,17 +110,17 @@ include_once "layouts/header.php";
                                         <div class="row mt-3" >
                                             <div class="col-md-6">
                                                 <label for="" class="form-label">အသစ်ရောက်အရေအတွက်</label>
-                                                <input type="text" name="qty" id="new_qty" class="form-control" placeholder="အသစ်ရောက်အရေအတွက်" required>
+                                                <input type="number" name="qty" id="new_qty" class="form-control" placeholder="အသစ်ရောက်အရေအတွက်" required>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="" class="form-label">ပစ္စည်းတန်ဖိုး</label>
-                                                <input type="text" name="actual_price" id="item_value" class="form-control" placeholder="ပစ္စည်းတန်ဖိုး" required>
+                                                <input type="number" name="actual_price" id="item_value" class="form-control" placeholder="ပစ္စည်းတန်ဖိုး" required>
                                             </div>
                                         </div>      
                                         <div class="row mt-3">
                                         <div class="col-md-6">
                                                 <label for="" class="form-label">၁ ရက်ငှားရမ်းနှုံး</label>
-                                                <input type="text" name="lent_price" id="rental_rate" class="form-control" placeholder="၁ ရက်ငှားရမ်းနှုံး" required>
+                                                <input type="number" name="lent_price" id="rental_rate" class="form-control" placeholder="၁ ရက်ငှားရမ်းနှုံး" required>
                                             </div>
                                         </div>
                                             

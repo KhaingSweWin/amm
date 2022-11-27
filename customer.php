@@ -312,6 +312,17 @@ else if($(this).val().trim().length!=null){
 }
 
     })
+
+    $("#newwork").keyup(function(){
+        if($(this).val().trim().length===0){
+            $(':input[type="submit"]').prop('disabled', true);
+
+        }
+        else{
+            $(':input[type="submit"]').prop('disabled', false);
+
+        }
+    })
     
 
     $('#phone').keyup(function(){
